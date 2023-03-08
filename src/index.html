@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>learn tailwind</title>
-</head>
-<body>
-    <header class="h-10 w-full block sticky top-0 left-0 bg-cyan-800 opacity-90 flex flex-row items-center">
-        <h1 class="mx-auto text-xl font-bold">Coding Card</h1>
+  </head>
+  <body>
+    <header
+      class="h-10 w-full block sticky top-0 left-0 bg-cyan-800 opacity-90 flex flex-row items-center"
+    >
+      <h1 class="mx-auto text-xl font-bold">Coding Card</h1>
     </header>
-    <div class="h-screen w-full bg-gradient-to-bl from-teal-200 to-sky-500 flex flex-row items-center">
-        <div class="mx-auto rounded-lg w-72 h-96 bg-slate-700">
-            <div class="w-full h-8 border-b border-b-slate-500 flex flex-row items-center">
-                <div class="rounded-full h-2 w-2 ml-2 shrink-0 bg-red-500"></div>
-                <div class="rounded-full h-2 w-2 ml-1 shrink-0 bg-yellow-400"></div>
-                <div class="rounded-full h-2 w-2 ml-1 shrink-0 bg-green-500"></div>
-                <div class="ml-4 text-slate-400"><h2>Some code example</h2></div>
+    <!-- background -->
+    <div
+      class="h-screen w-full bg-gradient-to-bl from-teal-200 to-sky-500 flex flex-row items-center justify-center"
+    >
+      <!-- outer container-->
+      <div class="w-72 h-96 group [perspective:900px]">
+        <!-- inner container -->
+        <div
+          class="w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+        >
+          <!-- front side -->
+          <div
+            class="absolute rounded-lg w-72 h-96 bg-slate-700 [backface-visibility:hidden]"
+          >
+            <div
+              class="w-full h-8 border-b border-b-slate-500 flex flex-row items-center"
+            >
+              <div class="rounded-full h-2 w-2 ml-2 shrink-0 bg-red-500"></div>
+              <div
+                class="rounded-full h-2 w-2 ml-1 shrink-0 bg-yellow-400"
+              ></div>
+              <div
+                class="rounded-full h-2 w-2 ml-1 shrink-0 bg-green-500"
+              ></div>
+              <div class="ml-4 text-slate-400"><h2>Some code example</h2></div>
             </div>
-            <div class="text-xs font-mono text-slate-200 p-2 h-80 border-b border-b-slate-500">
-                <pre>
+            <div
+              class="text-xs font-mono text-slate-200 p-2 h-80 border-b border-b-slate-500"
+            >
+              <pre>
                     <code>
 for (i = 0; i < 20; i++) {
     console.log("Hello World!");
@@ -29,36 +51,101 @@ for (i = 0; i < 20; i++) {
                     </code>
                 </pre>
             </div>
-            <div class="relative bottom-0 left-0 w-full h-8 flex flex-row justify-between">
-                <div>
-                    <button class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500">
-                    <img src="/icons/backward-fast-solid.svg" alt="run code" class="w-4 h-4">
-                    </button>
-                    <button class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500">
-                        <img src="/icons/file-code-regular.svg" alt="run code" class="w-4 h-4">
-                    </button>
-                    <button class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500">
-                        <img src="/icons/code-solid.svg" alt="run code" class="w-4 h-4">
-                    </button>
-                </div>
-                <div>
-                    <button class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500">
-                    <img src="/icons/circle-play-regular.svg" alt="run code" class="w-4 h-4">
-                    </button>
-                    <button class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500">
-                        <img src="/icons/repeat-solid.svg" alt="run code" class="w-4 h-4">
-                    </button>
-                    <button class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500">
-                        <img src="/icons/shuffle-solid.svg" alt="run code" class="w-4 h-4">
-                    </button>
-                </div>
-                
-                
-                
-                
+            <div
+              class="relative bottom-0 left-0 w-full h-8 flex flex-row justify-between"
+            >
+              <div>
+                <button
+                  class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500"
+                >
+                  <img
+                    src="/icons/file-code-regular.svg"
+                    alt="show stats"
+                    class="w-4 h-4"
+                  />
+                </button>
+                <button
+                  class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500"
+                >
+                  <img
+                    src="/icons/code-solid.svg"
+                    alt="show code"
+                    class="w-4 h-4"
+                  />
+                </button>
+              </div>
+              <div>
+                <button
+                  class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500"
+                >
+                  <img
+                    src="/icons/circle-play-regular.svg"
+                    alt="run code"
+                    class="w-4 h-4"
+                  />
+                </button>
+              </div>
             </div>
-
+          </div>
+          <!-- back side -->
+          <div
+            class="absolute rounded-lg w-72 h-96 bg-slate-700 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+          >
+            <div
+              class="w-full h-8 border-b border-b-slate-500 flex flex-row items-center"
+            >
+              <div class="rounded-full h-2 w-2 ml-2 shrink-0 bg-red-500"></div>
+              <div
+                class="rounded-full h-2 w-2 ml-1 shrink-0 bg-yellow-400"
+              ></div>
+              <div
+                class="rounded-full h-2 w-2 ml-1 shrink-0 bg-green-500"
+              ></div>
+              <div class="ml-4 text-slate-400"><h2>Visualisation</h2></div>
+            </div>
+            <div
+              class="text-xs font-mono text-slate-200 p-2 h-80 border-b border-b-slate-500"
+            >
+              Visuialisation will play here...
+            </div>
+            <div
+              class="relative bottom-0 left-0 w-full h-8 flex flex-row justify-between"
+            >
+              <div>
+                <button
+                  class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500"
+                >
+                  <img
+                    src="/icons/backward-fast-solid.svg"
+                    alt="run code"
+                    class="w-4 h-4"
+                  />
+                </button>
+              </div>
+              <div>
+                <button
+                  class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500"
+                >
+                  <img
+                    src="/icons/repeat-solid.svg"
+                    alt="repeat"
+                    class="w-4 h-4"
+                  />
+                </button>
+                <button
+                  class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500"
+                >
+                  <img
+                    src="/icons/shuffle-solid.svg"
+                    alt="randomize"
+                    class="w-4 h-4"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
