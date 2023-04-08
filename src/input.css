@@ -13,3 +13,7 @@
 .header-transparent {
   @apply bg-gradient-to-b from-cyan-700 to-cyan-300 opacity-90 shadow-md shadow-cyan-900;
 }
+
+.card-button {
+  @apply flex flex-row text-xs text-black justify-center items-center p-1 md:p-2 md:space-x-2 font-mono rounded-lg bg-lime-600 m-2 hover:bg-lime-500;
+}

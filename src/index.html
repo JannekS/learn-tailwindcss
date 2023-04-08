@@ -24,7 +24,7 @@
     <!-- background -->
     <div class="h-screen w-full flex flex-row items-center justify-center">
       <!-- Front & Back Side Container-->
-      <div class="w-72 h-96 group [perspective:900px]">
+      <div class="w-10/12 h-2/3 max-w-lg 2xl:h-1/2 group [perspective:900px]">
         <!-- Inner Container -->
         <div
           id="card-container"
@@ -32,27 +32,33 @@
         >
           <!-- front side -->
           <div
-            class="absolute rounded-lg w-72 h-96 bg-slate-700 [backface-visibility:hidden]"
+            class="absolute rounded-lg w-full h-full bg-slate-700 [backface-visibility:hidden]"
           >
-            <!-- Card Header -->
-            <div
-              class="w-full h-8 border-b border-b-slate-500 flex flex-row items-center"
-            >
-              <!-- Iconic Buttons -->
-              <div class="rounded-full h-2 w-2 ml-2 shrink-0 bg-red-500"></div>
+            <div class="flex flex-col w-full h-full">
+              <!-- Card Header -->
               <div
-                class="rounded-full h-2 w-2 ml-1 shrink-0 bg-yellow-400"
-              ></div>
+                class="w-full border-b border-b-slate-500 flex flex-row items-center"
+              >
+                <!-- Iconic Buttons -->
+                <div
+                  class="rounded-full h-2 w-2 ml-2 shrink-0 bg-red-500"
+                ></div>
+                <div
+                  class="rounded-full h-2 w-2 ml-1 shrink-0 bg-yellow-400"
+                ></div>
+                <div
+                  class="rounded-full h-2 w-2 ml-1 shrink-0 bg-green-500"
+                ></div>
+                <!-- Card Heading -->
+                <div class="ml-4 py-2 text-slate-400">
+                  <h2>Some code example</h2>
+                </div>
+              </div>
+              <!-- Card Main Content -->
               <div
-                class="rounded-full h-2 w-2 ml-1 shrink-0 bg-green-500"
-              ></div>
-              <!-- Card Heading -->
-              <div class="ml-4 text-slate-400"><h2>Some code example</h2></div>
-            </div>
-            <div
-              class="text-xs font-mono text-slate-200 p-2 h-80 border-b border-b-slate-500"
-            >
-              <pre>
+                class="flex-auto text-xs font-mono text-slate-200 p-2 border-b border-b-slate-500 md:text-sm md:px-4"
+              >
+                <pre>
                     <code>
 for (i = 0; i < 20; i++) {
     console.log("Hello World!");
@@ -60,110 +66,115 @@ for (i = 0; i < 20; i++) {
 }
                     </code>
                 </pre>
-            </div>
-
-            <!-- Card Footer -->
-            <div
-              class="relative bottom-0 left-0 w-full h-8 flex flex-row justify-between"
-            >
-              <!-- Left Buttons -->
-              <div>
-                <button
-                  class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500"
-                >
-                  <img
-                    src="/icons/file-code-regular.svg"
-                    alt="show stats"
-                    class="w-4 h-4"
-                  />
-                </button>
-                <button
-                  class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500"
-                >
-                  <img
-                    src="/icons/code-solid.svg"
-                    alt="show code"
-                    class="w-4 h-4"
-                  />
-                </button>
               </div>
-              <!-- Right Button -->
-              <div>
-                <button
-                  id="play-btn"
-                  class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500"
-                >
-                  <img
-                    src="/icons/circle-play-regular.svg"
-                    alt="run code"
-                    class="w-4 h-4"
-                  />
-                </button>
+
+              <!-- Card Footer -->
+              <div
+                class="relative bottom-0 left-0 w-full flex flex-row justify-between"
+              >
+                <!-- Left Buttons -->
+                <div class="flex flex-row">
+                  <button class="card-button">
+                    <img
+                      src="/icons/file-code-regular.svg"
+                      alt="show stats"
+                      class="w-4 h-4"
+                    />
+                    <span class="hidden md:flex">Show Stats</span>
+                  </button>
+                  <button class="card-button">
+                    <img
+                      src="/icons/code-solid.svg"
+                      alt="show code"
+                      class="w-4 h-4"
+                    />
+                    <span class="hidden md:flex">Show Code</span>
+                  </button>
+                </div>
+                <!-- Right Button -->
+                <div>
+                  <button id="play-btn" class="card-button">
+                    <img
+                      src="/icons/circle-play-regular.svg"
+                      alt="run code"
+                      class="w-4 h-4"
+                    />
+                    <span class="hidden md:flex">Run Code</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
           <!-- Back Side -->
           <div
-            class="absolute rounded-lg w-72 h-96 bg-slate-700 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+            class="absolute rounded-lg w-full h-full bg-slate-700 [transform:rotateY(180deg)] [backface-visibility:hidden]"
           >
-            <div
-              class="w-full h-8 border-b border-b-slate-500 flex flex-row items-center"
-            >
-              <div class="rounded-full h-2 w-2 ml-2 shrink-0 bg-red-500"></div>
+            <div class="flex flex-col w-full h-full">
+              <!-- Back Header -->
               <div
-                class="rounded-full h-2 w-2 ml-1 shrink-0 bg-yellow-400"
-              ></div>
-              <div
-                class="rounded-full h-2 w-2 ml-1 shrink-0 bg-green-500"
-              ></div>
-              <div class="ml-4 text-slate-400"><h2>Visualisation</h2></div>
-            </div>
-            <div
-              class="text-xs font-mono text-slate-200 p-2 h-80 border-b border-b-slate-500"
-            >
-              Visuialisation will play here...
-            </div>
-            <div
-              class="relative bottom-0 left-0 w-full h-8 flex flex-row justify-between"
-            >
-              <div>
-                <button
-                  id="back-btn"
-                  class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500"
-                >
-                  <img
-                    src="/icons/backward-fast-solid.svg"
-                    alt="run code"
-                    class="w-4 h-4"
-                  />
-                </button>
+                class="w-full border-b border-b-slate-500 flex flex-row items-center"
+              >
+                <!-- Iconic Buttons -->
+                <div
+                  class="rounded-full h-2 w-2 ml-2 shrink-0 bg-red-500"
+                ></div>
+                <div
+                  class="rounded-full h-2 w-2 ml-1 shrink-0 bg-yellow-400"
+                ></div>
+                <div
+                  class="rounded-full h-2 w-2 ml-1 shrink-0 bg-green-500"
+                ></div>
+                <div class="ml-4 py-2 text-slate-400">
+                  <h2>Visualisation</h2>
+                </div>
               </div>
-              <div>
-                <button
-                  class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500"
-                >
-                  <img
-                    src="/icons/repeat-solid.svg"
-                    alt="repeat"
-                    class="w-4 h-4"
-                  />
-                </button>
-                <button
-                  class="text-xs text-slate-200 p-1 space-y-10 font-mono rounded-lg bg-lime-600 m-1 hover:bg-lime-500"
-                >
-                  <img
-                    src="/icons/shuffle-solid.svg"
-                    alt="randomize"
-                    class="w-4 h-4"
-                  />
-                </button>
+              <!-- Back Main Content -->
+              <div
+                class="flex-auto text-xs font-mono text-slate-200 p-2 h-80 border-b border-b-slate-500"
+              >
+                Visuialisation will play here...
+              </div>
+              <!-- Back Footer -->
+              <div
+                class="relative bottom-0 left-0 w-full flex flex-row justify-between"
+              >
+                <div>
+                  <!-- Back Right Button -->
+                  <button id="back-btn" class="card-button">
+                    <img
+                      src="/icons/backward-fast-solid.svg"
+                      alt="run code"
+                      class="w-4 h-4"
+                    />
+                    <span class="hidden md:flex">Go Back</span>
+                  </button>
+                </div>
+                <!-- Back Left Buttons -->
+                <div class="flex flex-row">
+                  <button class="card-button">
+                    <img
+                      src="/icons/repeat-solid.svg"
+                      alt="repeat"
+                      class="w-4 h-4"
+                    />
+                    <span class="hidden md:flex">Reset</span>
+                  </button>
+                  <button class="card-button">
+                    <img
+                      src="/icons/shuffle-solid.svg"
+                      alt="randomize"
+                      class="w-4 h-4"
+                    />
+                    <span class="hidden md:flex">Shuffle Array</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="h-screen w-full bg-teal-50">
+    <div class="h-screen w-full bg-teal-100">
       <h2 class="text-4xl p-5">More Content comming soon...</h2>
     </div>
   </body>
