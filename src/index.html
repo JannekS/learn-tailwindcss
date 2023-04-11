@@ -92,39 +92,61 @@
               </div>
               <!-- Card Main Content -->
               <div
-                class="flex-auto text-xs text-slate-200 p-2 border-b border-b-slate-500 md:text-sm md:px-4"
+                class="flex-auto text-slate-200 p-2 border-b border-b-slate-500 overflow-y-auto md:px-4"
               >
-                <pre>
+                <div id="code-info">
+                  <h2 class="text-lg font-bold font-mono">Basic Info</h2>
+                  <p>
+                    A for loop is great to go through all the elements of an
+                    array.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Rem obcaecati ipsa laudantium pariatur amet illo repellendus
+                    neque error quisquam, porro mollitia quae est placeat,
+                    consequuntur aliquid ex ipsum exercitationem aspernatur! Vel
+                    saepe molestias facere, distinctio sint cum reprehenderit
+                    omnis nobis eveniet explicabo voluptatem magnam quae id
+                    placeat tenetur ad ratione fuga soluta excepturi quo.
+                    Cupiditate, commodi iusto. Atque, neque aspernatur.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Rem obcaecati ipsa laudantium pariatur amet illo repellendus
+                    neque error quisquam, porro mollitia quae est placeat,
+                    consequuntur aliquid ex ipsum exercitationem aspernatur! Vel
+                    saepe molestias facere, distinctio sint cum reprehenderit
+                    omnis nobis eveniet explicabo voluptatem magnam quae id
+                    placeat tenetur ad ratione fuga soluta excepturi quo.
+                    Cupiditate, commodi iusto. Atque, neque aspernatur.
+                  </p>
+                </div>
+                <div id="code-example" class="text-xs md:text-sm hidden">
+                  <pre>
                     <code class="font-mono">
 for (i = 0; i < 10; i++) {
     console.log("Hello World!");
     console.log("I like code :-)");
 }
                     </code>
-                </pre>
+                  </pre>
+                </div>
               </div>
 
               <!-- Card Footer -->
               <div
                 class="relative bottom-0 left-0 w-full flex flex-row justify-between"
               >
-                <!-- Left Buttons -->
-                <div class="flex flex-row">
-                  <button class="card-button">
+                <!-- Left Button -->
+                <div class="flex">
+                  <button id="stats-code-btn" class="card-button">
                     <img
-                      src="/icons/file-code-regular.svg"
+                      id="code-btn-img"
+                      src="/icons/code-solid.svg"
                       alt="show stats"
                       class="w-4 h-4"
                     />
-                    <span class="hidden md:flex">Show Stats</span>
-                  </button>
-                  <button class="card-button">
-                    <img
-                      src="/icons/code-solid.svg"
-                      alt="show code"
-                      class="w-4 h-4"
-                    />
-                    <span class="hidden md:flex">Show Code</span>
+                    <span id="code-btn-label" class="flex">Show Code</span>
                   </button>
                 </div>
                 <!-- Right Button -->
@@ -135,7 +157,7 @@ for (i = 0; i < 10; i++) {
                       alt="run code"
                       class="w-4 h-4"
                     />
-                    <span class="hidden md:flex">Run Code</span>
+                    <span class="flex">Run Code</span>
                   </button>
                 </div>
               </div>
@@ -212,7 +234,7 @@ for (i = 0; i < 10; i++) {
                       alt="repeat"
                       class="w-4 h-4"
                     />
-                    <span class="hidden md:flex">Reset</span>
+                    <span class="hidden md:flex">Replay</span>
                   </button>
                   <button class="card-button">
                     <img
