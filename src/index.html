@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,7 +29,7 @@
     </header>
     <section id="intro">
       <div
-        class="h-screen mx-auto max-w-2xl flex flex-col text-cyan-800 text-center"
+        class="min-h-screen mx-auto max-w-2xl flex flex-col text-cyan-800 text-center"
       >
         <div
           id="heading"
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div
-          class="relative group duration-500 w-10/12 max-w-lg h-3/5 mx-auto md:flex md:flex-row md:max-w-xl md:w-full md:mt-10 md:mx-5"
+          class="relative group duration-500 w-10/12 max-w-lg h-3/5 mx-auto mb-6 md:flex md:flex-row md:max-w-xl md:w-full md:mt-10 md:mx-5"
         >
           <img
             src="/img/code1.jpg"
@@ -105,72 +105,176 @@
       </div>
       <div></div>
     </section>
-    <!-- background -->
-    <div class="h-screen w-full flex flex-row items-center justify-center">
-      <!-- Front & Back Side Container-->
-      <div class="w-10/12 h-2/3 max-w-lg 2xl:h-1/2 group [perspective:900px]">
-        <!-- Inner Container -->
+    <section id="algorithms" class="min-h-screen">
+      <div
+        class="flex flex-col justify-center text-cyan-900 bg-gradient-to-bl from-slate-200 to-slate-400 bg-opacity-80 w-full min-h-screen p-6 mx-auto"
+      >
+        <h2 class="text-4xl font-bold text-center">Algorithms</h2>
         <div
-          id="card-container"
-          class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d]"
+          class="flex flex-col justify-center items-center space-y-4 mt-10 md:flex-row md:space-y-0 md:justify-around md:space-x-4"
         >
-          <!-- front side -->
           <div
-            class="absolute rounded-lg w-full h-full bg-slate-700 [backface-visibility:hidden]"
+            class="flex flex-col justify-center items-center space-y-4 bg-slate-200 shadow-xl rounded-lg p-6"
           >
-            <div class="flex flex-col w-full h-full">
-              <!-- Card Header -->
-              <div
-                class="w-full border-b border-b-slate-500 flex flex-row items-center"
-              >
-                <!-- Iconic Buttons -->
+            <h3 class="text-xl font-bold mb-4">Sort Algorithms</h3>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Bubble Sort</a>
+            </div>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Merge Sort</a>
+            </div>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Radix Sort</a>
+            </div>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Selection Sort</a>
+            </div>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Insertion Sort</a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center space-y-4 bg-slate-200 shadow-xl rounded-lg p-6"
+          >
+            <h3 class="text-xl font-bold mb-4">Sort Algorithms</h3>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Bubble Sort</a>
+            </div>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Merge Sort</a>
+            </div>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Radix Sort</a>
+            </div>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Selection Sort</a>
+            </div>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Insertion Sort</a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center space-y-4 bg-slate-200 shadow-xl rounded-lg p-6"
+          >
+            <h3 class="text-xl font-bold mb-4">Sort Algorithms</h3>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Bubble Sort</a>
+            </div>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Merge Sort</a>
+            </div>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Radix Sort</a>
+            </div>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Selection Sort</a>
+            </div>
+            <div
+              class="p-4 w-48 rounded-lg bg-slate-600 text-white font-mono text-center text-lg"
+            >
+              <a href="#code-card">Insertion Sort</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="code-card">
+      <!-- code card modal -->
+      <div class="h-screen w-full flex flex-row items-center justify-center">
+        <!-- Front & Back Side Container-->
+        <div class="w-10/12 h-2/3 max-w-lg 2xl:h-1/2 group [perspective:900px]">
+          <!-- Inner Container -->
+          <div
+            id="card-container"
+            class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d]"
+          >
+            <!-- front side -->
+            <div
+              class="absolute rounded-lg w-full h-full bg-slate-700 [backface-visibility:hidden]"
+            >
+              <div class="flex flex-col w-full h-full">
+                <!-- Card Header -->
                 <div
-                  class="rounded-full h-2 w-2 ml-2 shrink-0 bg-red-500"
-                ></div>
-                <div
-                  class="rounded-full h-2 w-2 ml-1 shrink-0 bg-yellow-400"
-                ></div>
-                <div
-                  class="rounded-full h-2 w-2 ml-1 shrink-0 bg-green-500"
-                ></div>
-                <!-- Card Heading -->
-                <div class="ml-4 py-2 text-slate-400">
-                  <h2 class="text-lg font-bold">Simple for-loop</h2>
+                  class="w-full border-b border-b-slate-500 flex flex-row items-center"
+                >
+                  <!-- Iconic Buttons -->
+                  <div
+                    class="rounded-full h-2 w-2 ml-2 shrink-0 bg-red-500"
+                  ></div>
+                  <div
+                    class="rounded-full h-2 w-2 ml-1 shrink-0 bg-yellow-400"
+                  ></div>
+                  <div
+                    class="rounded-full h-2 w-2 ml-1 shrink-0 bg-green-500"
+                  ></div>
+                  <!-- Card Heading -->
+                  <div class="ml-4 py-2 text-slate-400">
+                    <h2 class="text-lg font-bold">Simple for-loop</h2>
+                  </div>
                 </div>
-              </div>
-              <!-- Card Main Content -->
-              <div
-                class="flex-auto text-slate-200 p-2 border-b border-b-slate-500 overflow-y-auto md:px-4"
-              >
-                <div id="code-info">
-                  <h2 class="text-lg font-bold font-mono">Basic Info</h2>
-                  <p>
-                    A for loop is great to go through all the elements of an
-                    array.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Rem obcaecati ipsa laudantium pariatur amet illo repellendus
-                    neque error quisquam, porro mollitia quae est placeat,
-                    consequuntur aliquid ex ipsum exercitationem aspernatur! Vel
-                    saepe molestias facere, distinctio sint cum reprehenderit
-                    omnis nobis eveniet explicabo voluptatem magnam quae id
-                    placeat tenetur ad ratione fuga soluta excepturi quo.
-                    Cupiditate, commodi iusto. Atque, neque aspernatur.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Rem obcaecati ipsa laudantium pariatur amet illo repellendus
-                    neque error quisquam, porro mollitia quae est placeat,
-                    consequuntur aliquid ex ipsum exercitationem aspernatur! Vel
-                    saepe molestias facere, distinctio sint cum reprehenderit
-                    omnis nobis eveniet explicabo voluptatem magnam quae id
-                    placeat tenetur ad ratione fuga soluta excepturi quo.
-                    Cupiditate, commodi iusto. Atque, neque aspernatur.
-                  </p>
-                </div>
-                <div id="code-example" class="text-xs md:text-sm hidden">
-                  <pre>
+                <!-- Card Main Content -->
+                <div
+                  class="flex-auto text-slate-200 p-2 border-b border-b-slate-500 overflow-y-auto md:px-4"
+                >
+                  <div id="code-info">
+                    <h2 class="text-lg font-bold font-mono">Basic Info</h2>
+                    <p>
+                      A for loop is great to go through all the elements of an
+                      array.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Rem obcaecati ipsa laudantium pariatur amet illo
+                      repellendus neque error quisquam, porro mollitia quae est
+                      placeat, consequuntur aliquid ex ipsum exercitationem
+                      aspernatur! Vel saepe molestias facere, distinctio sint
+                      cum reprehenderit omnis nobis eveniet explicabo voluptatem
+                      magnam quae id placeat tenetur ad ratione fuga soluta
+                      excepturi quo. Cupiditate, commodi iusto. Atque, neque
+                      aspernatur.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Rem obcaecati ipsa laudantium pariatur amet illo
+                      repellendus neque error quisquam, porro mollitia quae est
+                      placeat, consequuntur aliquid ex ipsum exercitationem
+                      aspernatur! Vel saepe molestias facere, distinctio sint
+                      cum reprehenderit omnis nobis eveniet explicabo voluptatem
+                      magnam quae id placeat tenetur ad ratione fuga soluta
+                      excepturi quo. Cupiditate, commodi iusto. Atque, neque
+                      aspernatur.
+                    </p>
+                  </div>
+                  <div id="code-example" class="text-xs md:text-sm hidden">
+                    <pre>
                     <code class="font-mono">
 for (i = 0; i < 10; i++) {
     console.log("Hello World!");
@@ -178,128 +282,130 @@ for (i = 0; i < 10; i++) {
 }
                     </code>
                   </pre>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Card Footer -->
-              <div
-                class="relative bottom-0 left-0 w-full flex flex-row justify-between"
-              >
-                <!-- Left Button -->
-                <div class="flex">
-                  <button id="stats-code-btn" class="card-button">
-                    <img
-                      id="code-btn-img"
-                      src="/icons/code-solid.svg"
-                      alt="show stats"
-                      class="w-4 h-4"
-                    />
-                    <span id="code-btn-label" class="flex">Show Code</span>
-                  </button>
-                </div>
-                <!-- Right Button -->
-                <div>
-                  <button id="play-btn" class="card-button">
-                    <img
-                      src="/icons/circle-play-regular.svg"
-                      alt="run code"
-                      class="w-4 h-4"
-                    />
-                    <span class="flex">Run Code</span>
-                  </button>
+                <!-- Card Footer -->
+                <div
+                  class="relative bottom-0 left-0 w-full flex flex-row justify-between"
+                >
+                  <!-- Left Button -->
+                  <div class="flex">
+                    <button id="stats-code-btn" class="card-button">
+                      <img
+                        id="code-btn-img"
+                        src="/icons/code-solid.svg"
+                        alt="show stats"
+                        class="w-4 h-4"
+                      />
+                      <span id="code-btn-label" class="flex">Show Code</span>
+                    </button>
+                  </div>
+                  <!-- Right Button -->
+                  <div>
+                    <button id="play-btn" class="card-button">
+                      <img
+                        src="/icons/circle-play-regular.svg"
+                        alt="run code"
+                        class="w-4 h-4"
+                      />
+                      <span class="flex">Run Code</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Back Side -->
-          <div
-            class="absolute rounded-lg w-full h-full bg-slate-700 [transform:rotateY(180deg)] [backface-visibility:hidden]"
-          >
-            <div class="flex flex-col w-full h-full">
-              <!-- Back Header -->
-              <div
-                class="w-full border-b border-b-slate-500 flex flex-row items-center"
-              >
-                <!-- Iconic Buttons -->
+            <!-- Back Side -->
+            <div
+              class="absolute rounded-lg w-full h-full bg-slate-700 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+            >
+              <div class="flex flex-col w-full h-full">
+                <!-- Back Header -->
                 <div
-                  class="rounded-full h-2 w-2 ml-2 shrink-0 bg-red-500"
-                ></div>
-                <div
-                  class="rounded-full h-2 w-2 ml-1 shrink-0 bg-yellow-400"
-                ></div>
-                <div
-                  class="rounded-full h-2 w-2 ml-1 shrink-0 bg-green-500"
-                ></div>
-                <div class="ml-4 py-2 text-slate-400">
-                  <h2 class="text-lg font-bold">Output</h2>
+                  class="w-full border-b border-b-slate-500 flex flex-row items-center"
+                >
+                  <!-- Iconic Buttons -->
+                  <div
+                    class="rounded-full h-2 w-2 ml-2 shrink-0 bg-red-500"
+                  ></div>
+                  <div
+                    class="rounded-full h-2 w-2 ml-1 shrink-0 bg-yellow-400"
+                  ></div>
+                  <div
+                    class="rounded-full h-2 w-2 ml-1 shrink-0 bg-green-500"
+                  ></div>
+                  <div class="ml-4 py-2 text-slate-400">
+                    <h2 class="text-lg font-bold">Output</h2>
+                  </div>
                 </div>
-              </div>
-              <!-- Back Main Content -->
-              <div
-                class="flex-auto text-xs font-mono text-slate-200 p-2 h-80 border-b border-b-slate-500"
-              >
-                <p>> Hello World!</p>
-                <p>> I like code :-)</p>
-                <p>> Hello World!</p>
-                <p>> I like code :-)</p>
-                <p>> Hello World!</p>
-                <p>> I like code :-)</p>
-                <p>> Hello World!</p>
-                <p>> I like code :-)</p>
-                <p>> Hello World!</p>
-                <p>> I like code :-)</p>
-                <p>> Hello World!</p>
-                <p>> I like code :-)</p>
-                <p>> Hello World!</p>
-                <p>> I like code :-)</p>
-                <p>> Hello World!</p>
-                <p>> I like code :-)</p>
-                <p>> Hello World!</p>
-                <p>> I like code :-)</p>
-                <p>> Hello World!</p>
-                <p>> I like code :-)</p>
-              </div>
-              <!-- Back Footer -->
-              <div
-                class="relative bottom-0 left-0 w-full flex flex-row justify-between"
-              >
-                <div>
-                  <!-- Back Right Button -->
-                  <button id="back-btn" class="card-button">
-                    <img
-                      src="/icons/backward-fast-solid.svg"
-                      alt="run code"
-                      class="w-4 h-4"
-                    />
-                    <span class="hidden md:flex">Go Back</span>
-                  </button>
+                <!-- Back Main Content -->
+                <div
+                  class="flex-auto text-xs font-mono text-slate-200 p-2 h-80 border-b border-b-slate-500"
+                >
+                  <p>> Hello World!</p>
+                  <p>> I like code :-)</p>
+                  <p>> Hello World!</p>
+                  <p>> I like code :-)</p>
+                  <p>> Hello World!</p>
+                  <p>> I like code :-)</p>
+                  <p>> Hello World!</p>
+                  <p>> I like code :-)</p>
+                  <p>> Hello World!</p>
+                  <p>> I like code :-)</p>
+                  <p>> Hello World!</p>
+                  <p>> I like code :-)</p>
+                  <p>> Hello World!</p>
+                  <p>> I like code :-)</p>
+                  <p>> Hello World!</p>
+                  <p>> I like code :-)</p>
+                  <p>> Hello World!</p>
+                  <p>> I like code :-)</p>
+                  <p>> Hello World!</p>
+                  <p>> I like code :-)</p>
                 </div>
-                <!-- Back Left Buttons -->
-                <div class="flex flex-row">
-                  <button class="card-button">
-                    <img
-                      src="/icons/repeat-solid.svg"
-                      alt="repeat"
-                      class="w-4 h-4"
-                    />
-                    <span class="hidden md:flex">Replay</span>
-                  </button>
-                  <button class="card-button">
-                    <img
-                      src="/icons/shuffle-solid.svg"
-                      alt="randomize"
-                      class="w-4 h-4"
-                    />
-                    <span class="hidden md:flex">Shuffle Array</span>
-                  </button>
+                <!-- Back Footer -->
+                <div
+                  class="relative bottom-0 left-0 w-full flex flex-row justify-between"
+                >
+                  <div>
+                    <!-- Back Right Button -->
+                    <button id="back-btn" class="card-button">
+                      <img
+                        src="/icons/backward-fast-solid.svg"
+                        alt="run code"
+                        class="w-4 h-4"
+                      />
+                      <span class="hidden md:flex">Go Back</span>
+                    </button>
+                  </div>
+                  <!-- Back Left Buttons -->
+                  <div class="flex flex-row">
+                    <button class="card-button">
+                      <img
+                        src="/icons/repeat-solid.svg"
+                        alt="repeat"
+                        class="w-4 h-4"
+                      />
+                      <span class="hidden md:flex">Replay</span>
+                    </button>
+                    <button class="card-button">
+                      <img
+                        src="/icons/shuffle-solid.svg"
+                        alt="randomize"
+                        class="w-4 h-4"
+                      />
+                      <span class="hidden md:flex">Shuffle Array</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="h-screen w-full bg-teal-100">
+    </section>
+
+    <div class="h-screen w-full bg-teal-200">
       <h2 class="text-4xl p-5">More Content comming soon...</h2>
     </div>
   </body>
